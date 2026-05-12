@@ -1,0 +1,31 @@
+query productCollections($id: ID!) {
+  product(id: $id) {
+    # 250 is Shopify's max page size
+    collections(first: 250) {
+      edges {
+        node {
+          id
+          title
+        }
+      }
+    }
+  }
+}
+
+query variantsProductId($cursor: String) {
+  # 250 is Shopify's max page size
+  productVariants(first: 250, after: $cursor) {
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+    edges {
+      node {
+        id
+        product {
+          id
+        }
+      }
+    }
+  }
+}

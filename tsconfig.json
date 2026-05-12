@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "bundler",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "outDir": "./dist",
+        "rootDir": "./",
+        "types": [
+            "node"
+        ]
+    },
+    "include": [
+        "src/**/*",
+        ".graphqlrc.ts",
+        "get-token.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
