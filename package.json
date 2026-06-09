@@ -2,6 +2,9 @@
   "name": "shopify-graphql-starter",
   "version": "1.0.0",
   "type": "module",
+  "engines": {
+    "node": "24"
+  },
   "scripts": {
     "token": "tsx get-token.ts",
     "dev": "tsx src/index.ts",
@@ -13,12 +16,12 @@
     "dotenv": "17.4.2"
   },
   "devDependencies": {
-    "@graphql-codegen/cli": "7.0.0",
-    "@graphql-codegen/typescript": "6.0.0",
-    "@graphql-codegen/typescript-graphql-request": "7.0.1",
-    "@graphql-codegen/typescript-operations": "6.0.0",
-    "@types/node": "25.6.0",
-    "tsx": "4.21.0",
+    "@graphql-codegen/cli": "7.1.2",
+    "@graphql-codegen/typescript-graphql-request": "7.1.0",
+    "@graphql-codegen/typescript-operations": "6.0.3",
+    "@parcel/watcher": "2.5.6",
+    "@types/node": "24.12.4",
+    "tsx": "4.22.4",
     "typescript": "6.0.3"
   }
 }

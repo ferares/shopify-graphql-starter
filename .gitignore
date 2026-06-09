@@ -1,4 +1,5 @@
 .env
+/dist/
 /src/generated/
 /node_modules/
 cache.json
