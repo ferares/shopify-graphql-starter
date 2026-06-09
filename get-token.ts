@@ -55,7 +55,7 @@ const server = http.createServer(async (request, response) => {
   console.log("Access token saved at .env file as ACCESS_TOKEN")
 
   response.end("Done! You can close this tab.")
-  server.close()
+  server.close(() => process.exit(0))
 })
 
 server.listen(PORT, () => {
